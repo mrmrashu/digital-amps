@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/master.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/navbar.css') }}"
+    />
+    {% block link %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="w100 nav">
+        <div class="brand">
+          <img
+            src="{{ url_for('static',filename = 'images/digital_amps_logo_black.png') }}"
+            alt=""
+          />
+        </div>
+        <div class="font-large font-weight-bold title">
+          Your Digital Strategy Toolkit - The Digital AMPS Approach
+          Stratahedron<sup class="font-normal">TM</sup> Model
+        </div>
+      </div>
+      {% block body %}{% endblock %}
+      <footer
+        class="w100 flex flex-center font-normal font-weight-medium"
+        style="margin-bottom: 10px"
+      >
+        <span style="margin-top: 08px; margin-right: 5px">
+        Powered by
+        </span>
+        <a href="https://www.nanotech-softapp.com/">&nbsp;<img height="36" src="/static/images/1-logo.png"></a>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script
+            src="{{ url_for('static',filename='js/svg-multiline.js')  }}"
+            defer
+    ></script>
+    <script
+      src="{{ url_for('static',filename='js/index.js')  }}"
+    defer
+    ></script>
+    {% block js%}{% endblock %}
+  </body>
+</html>

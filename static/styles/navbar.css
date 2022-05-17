@@ -1,0 +1,54 @@
+.nav {
+  background: rgb(173, 44, 26, 1);
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  padding: 0.5%;
+}
+
+.nav img {
+  max-width: 80px;
+  height: 80px;
+}
+
+.brand {
+  width: fit-content;
+  float: left;
+}
+.title {
+  width: calc(100% - 80px);
+  text-align: center;
+  text-align-last: center;
+  float: left;
+  padding: 1.2%;
+}
+
+@media (max-width: 768px) {
+  .nav img {
+    max-width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav img {
+    max-width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .brand {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+
+  .title {
+    width: 100%;
+  }
+}

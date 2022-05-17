@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.outer-box {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 120px;
+}
+
+.font-large {
+  font-size: 28px;
+}
+
+.font-medium {
+  font-size: 21px;
+}
+
+.font-normal {
+  font-size: 15.75px;
+}
+
+.font-small {
+  font-size: 11px;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-medium {
+  font-weight: 600;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  float: left;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.flex-center {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.flex-center-center {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.p-small {
+  padding: 1%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.mt {
+  margin-top: 1%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+  display: block;
+}
+
+.flex-outer-container {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.flex-inner-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.user-guide-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.registration input {
+  width: 70%;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px !important;
+  width: 100%;
+  line-height: 1;
+  font-weight: 500;
+  background: rgb(173, 44, 26);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8), 0 0 1px 1px rgba(137, 0, 0, 1);
+  border: none;
+}
+.btn:active {
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.6), 0 0 1px 1px rgba(137, 0, 0, 1);
+}
+
+.ele-change input {
+  border: none;
+  border-bottom: 1px dotted black;
+  outline: none;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 550;
+  text-indent: 0;
+  width: 50% !important;
+  border-radius: 0 !important;
+}
+
+.ele-change input::placeholder {
+  color: black;
+}
+
+.ele-change input:focus {
+  place-content: "";
+}
+
+@media only screen and (max-width: 992px) {
+  .font-large {
+    font-size: 22px;
+  }
+
+  .font-medium {
+    font-size: 16.5px;
+  }
+
+  .font-normal {
+    font-size: 12.375px;
+  }
+
+  .font-small {
+    font-size: 9.28px;
+  }
+
+  .font-weight-bold {
+    font-weight: 670;
+  }
+
+  .font-weight-medium {
+    font-weight: 570;
+  }
+
+  .font-weight-normal {
+    font-weight: 370;
+  }
+
+  .outer-box {
+    margin-top: 160px;
+  }
+
+  .ele-change input {
+    font-size: 12.375px;
+    width: 80 !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .outer-box {
+    margin-top: 180px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .font-large {
+    font-size: 18px;
+  }
+
+  .font-medium {
+    font-size: 13.5px;
+  }
+
+  .font-normal {
+    font-size: 10.125px;
+  }
+
+  .font-small {
+    font-size: 7.6px;
+  }
+
+  .font-weight-bold {
+    font-weight: 650;
+  }
+
+  .font-weight-medium {
+    font-weight: 450;
+  }
+
+  .font-weight-normal {
+    font-weight: 350;
+  }
+  .outer-box {
+    margin-top: 120px;
+  }
+
+  .ele-change input {
+    font-size: 10.125px;
+    width: 80 !important;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .outer-box {
+    margin-top: 140px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .font-large {
+    font-size: 14px;
+  }
+
+  .font-medium {
+    font-size: 10.5px;
+  }
+
+  .font-normal {
+    font-size: 7.875px;
+  }
+
+  .font-small {
+    font-size: 6px;
+  }
+
+  .font-weight-bold {
+    font-weight: 630;
+  }
+
+  .font-weight-medium {
+    font-weight: 530;
+  }
+
+  .font-weight-normal {
+    font-weight: 330;
+  }
+
+  .outer-box {
+    margin-top: 120px;
+  }
+
+  .ele-change input {
+    font-size: 7.875px;
+    width: 80 !important;
+  }
+}

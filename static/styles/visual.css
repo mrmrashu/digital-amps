@@ -1,0 +1,257 @@
+.visual-font-large {
+  font-size: 1.3vw;
+  line-height: 0.8;
+}
+
+.visual-font-medium {
+  font-size: 1vw;
+}
+
+.visual-font-small {
+  font-size: 0.8vw;
+}
+
+.visual-font-small1 {
+  font-size: 0.85vw;
+}
+.h-auto {
+  height: 50vw;
+}
+.square1 {
+  width: 20vw;
+  height: 20vw;
+  border: 0.3vw solid black;
+  position: relative;
+  padding: 0;
+  transform: rotate(45deg) skew(15deg, 15deg);
+  z-index: 1;
+}
+
+.head1 {
+  width: 15ch;
+  height: 4ch;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 57%;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+  left: 6%;
+  text-align: center;
+}
+
+.head2 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 24%;
+  width: 15ch;
+  word-break: break-all;
+  left: 42%;
+  text-align: center;
+}
+
+/*All the lines to be rendered in SVG*/
+/*Centered Titles*/
+.l {
+  display: flex;
+  justify-content: center;
+  word-break: break-all;
+  font-weight: 600;
+  width: 90px !important;
+  text-align: center;
+  line-height: 1;
+}
+/*Triangle Borders*/
+.lBorders {
+  font-size: 11px;
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.lHashtags {
+  font-size: 08px;
+}
+
+.line1 {
+  width: 27.8vw;
+  border-bottom: 0.2vw solid black;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 49%;
+  left: -23.2%;
+  text-align: center;
+  line-height: 10%;
+  padding-bottom: 3%;
+}
+
+.lr-line1 {
+  bottom: 48%;
+  left: -22.8%;
+  width: 27.9vw;
+}
+
+.lr-line2 {
+  width: 27.9vw;
+  bottom: 51%;
+  left: -20%;
+}
+
+.line2 {
+  width: 100%;
+  text-align: center;
+  transform: rotate(-100deg) skew(10deg, 10deg);
+  position: absolute;
+  top: 46%;
+  left: -47%;
+}
+
+.line3 {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  transform: skew(-10deg, -10deg) rotate(10deg);
+}
+
+.d-line3 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 47%;
+  right: -46%;
+  transform: rotate(-90deg);
+}
+
+.d-line2 {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  position: absolute;
+}
+
+.d-line1 {
+  width: 27.8vw;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 8.4vw;
+  left: -3.7vw;
+  text-align: center;
+}
+
+.extra1 {
+  width: fit-content;
+  padding: 0.3vw;
+  background: black;
+  color: #fff;
+  position: absolute;
+  transform: rotate(225deg);
+  letter-spacing: 0.05vw;
+  top: 6%;
+  left: -1.9%;
+}
+
+.extra2 {
+  width: fit-content;
+  padding: 0.2vw;
+  background: black;
+  color: #fff;
+  transform: rotate(285deg) skew(10deg, 10deg);
+  letter-spacing: 0.2vw;
+  bottom: 13%;
+  left: -3.5%;
+  text-align: center;
+  position: absolute;
+}
+
+.extra3 {
+  width: fit-content;
+  padding: 0.2vw;
+  background: black;
+  color: #fff;
+  position: absolute;
+  transform: rotate(-205deg) skew(-5deg, -5deg);
+  letter-spacing: 0.2vw;
+  top: 8.5%;
+  right: 7%;
+  text-align: center;
+}
+
+.d-extra1 {
+  padding: 0.3vw;
+  background: #555555;
+  color: #fff;
+  position: absolute;
+  transform: rotate(-315deg);
+  letter-spacing: 0.05vw;
+  right: -3%;
+  bottom: 10%;
+  text-align: center;
+}
+
+.d-extra2 {
+  text-align: center;
+  padding: 0.3vw;
+  background: #555555;
+  color: #fff;
+  position: absolute;
+  transform: rotate(-20deg) skew(-10deg, -10deg);
+  letter-spacing: 0.05vw;
+  left: 3%;
+  bottom: 12%;
+}
+
+.d-extra3 {
+  text-align: center;
+  padding: 0.3vw;
+  background: #555555;
+  color: #fff;
+  position: absolute;
+  transform: rotate(-70deg) skew(10deg, 10deg);
+  letter-spacing: 0.05vw;
+  right: -10.4%;
+  top: 25%;
+}
+
+.square2 {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-left: 0.3vw solid black;
+  transform: rotate(45deg) skew(15deg, 15deg);
+  bottom: -5.4%;
+  left: 8.5%;
+}
+
+.square3 {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-top: 0.3vw solid black;
+  transform: rotate(45deg) skew(15deg, 15deg);
+  bottom: -5.4%;
+  right: 8.5%;
+}
+
+.square2-inner,
+.square3-inner {
+  width: 20vw;
+  height: 20vw;
+  position: relative;
+}
+
+@media (max-width: 1100px) {
+  .square2 {
+    left: 29.5%;
+    bottom: -5%;
+  }
+
+  .square3 {
+    right: 29.5%;
+    bottom: -5%;
+  }
+}
